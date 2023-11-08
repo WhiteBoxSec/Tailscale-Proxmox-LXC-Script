@@ -5,7 +5,7 @@ Unprivileged LXC containers in Proxmox won't work with Tailscale.
 
 https://tailscale.com/kb/1130/lxc-unprivileged/
 
-They require changes to the LXC config file in Proxmox. This script makes the changes for you.
+They require changes to the LXC config file in Proxmox. This script makes the changes and reboots the container for you.
 
 ## Usage
 
