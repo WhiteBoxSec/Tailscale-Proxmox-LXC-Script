@@ -12,4 +12,18 @@ They require changes to the LXC config file in Proxmox. This script makes the ch
 Supply the script the IP/hostname, username, password, and target container ID. 
 
 ```
+./lxc-ts-fix.sh -h
+Usage: ./lxc-ts-fix.sh [-u username] [-l ip] [-i Container-id]
+
+This script adds the required config changes to LXC file and then reboots the container
+
+Options:
+  -u  Specify the username for Proxmox.
+  -l  Specify the IP or hostname for Proxmox.
+  -i  Specify the LXC container ID.
+  -h  Display this help message.
+```
+
+```
+./lxc-ts-fix.sh -u root -p Apassword -l 10.10.10.10 -i 106
 ```
